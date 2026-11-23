@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1550" viewBox="0 0 2400 1550">
+<rect width="2400" height="1550" fill="#FFFFFF"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5E6067"/></marker></defs>
+<text x="1200.0" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#20212A">AI-BASED AUDIO DEEPFAKE DETECTION SYSTEM</text>
+<text x="1200.0" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" font-weight="normal" fill="#626978">Project system architecture</text>
+<text x="620" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#5146A5">1  AUDIO DEEPFAKE DETECTION</text>
+<text x="1780" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#5146A5">2  VOICE CONVERSION (RVC)</text>
+<rect x="70" y="235" width="1100" height="1085" rx="28" fill="#FFFFFF" stroke="#E0DDF4" stroke-width="3"/>
+<rect x="1230" y="235" width="1100" height="1085" rx="28" fill="#FFFFFF" stroke="#E0DDF4" stroke-width="3"/>
+<rect x="140" y="285" width="640" height="108" rx="22" fill="#F4F2ED" stroke="#5E6067" stroke-width="3"/>
+<text x="460.0" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#20212A">User audio</text>
+<text x="460.0" y="368" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#626978">Upload an audio clip</text>
+<rect x="140" y="422" width="640" height="108" rx="22" fill="#F0EEFF" stroke="#5146A5" stroke-width="3"/>
+<text x="460.0" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#5146A5">Web interface</text>
+<text x="460.0" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#626978">Flask API or Streamlit dashboard</text>
+<rect x="140" y="559" width="640" height="108" rx="22" fill="#E6F6F0" stroke="#13745E" stroke-width="3"/>
+<text x="460.0" y="607" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#13745E">Audio preprocessing</text>
+<text x="460.0" y="642" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#626978">Load • resample • normalize</text>
+<rect x="140" y="696" width="640" height="108" rx="22" fill="#E6F6F0" stroke="#13745E" stroke-width="3"/>
+<text x="460.0" y="744" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#13745E">Feature extraction</text>
+<text x="460.0" y="779" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#626978">78 values: MFCC, LFCC and CQCC-like statistics</text>
+<rect x="140" y="833" width="640" height="108" rx="22" fill="#E6F6F0" stroke="#13745E" stroke-width="3"/>
+<text x="460.0" y="881" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#13745E">ResNeXt classifier</text>
+<text x="460.0" y="916" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#626978">Grouped convolution • cardinality 4</text>
+<rect x="140" y="970" width="640" height="108" rx="22" fill="#F0EEFF" stroke="#5146A5" stroke-width="3"/>
+<text x="460.0" y="1018" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#5146A5">Prediction and analysis</text>
+<text x="460.0" y="1053" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#626978">Genuine / AI-generated score + audio views</text>
+<line x1="460.0" y1="393" x2="460.0" y2="414" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<line x1="460.0" y1="530" x2="460.0" y2="551" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<line x1="460.0" y1="667" x2="460.0" y2="688" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<line x1="460.0" y1="804" x2="460.0" y2="825" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<line x1="460.0" y1="941" x2="460.0" y2="962" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="170" y="1122" width="270" height="100" rx="22" fill="#E6F6F0" stroke="#13745E" stroke-width="3"/>
+<text x="305.0" y="1170" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#13745E">GENUINE</text>
+<text x="305.0" y="1205" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#626978">Predicted class</text>
+<rect x="480" y="1122" width="300" height="100" rx="22" fill="#FCEFEA" stroke="#A64E35" stroke-width="3"/>
+<text x="630.0" y="1170" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#A64E35">AI-GENERATED</text>
+<text x="630.0" y="1205" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#626978">Predicted class</text>
+<line x1="460.0" y1="1078" x2="460.0" y2="1103" stroke="#5E6067" stroke-width="4"/>
+<line x1="305" y1="1103" x2="630" y2="1103" stroke="#5E6067" stroke-width="4"/>
+<line x1="305" y1="1103" x2="305" y2="1115" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<line x1="630" y1="1103" x2="630" y2="1115" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="825" y="430" width="290" height="120" rx="22" fill="#F4F2ED" stroke="#5E6067" stroke-width="3"/>
+<text x="970.0" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#20212A">Labeled audio</text>
+<text x="970.0" y="513" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#626978">Real + synthetic clips</text>
+<rect x="825" y="590" width="290" height="120" rx="22" fill="#E6F6F0" stroke="#13745E" stroke-width="3"/>
+<text x="970.0" y="638" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#13745E">Training pipeline</text>
+<text x="970.0" y="673" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#626978">Feature extraction + validation</text>
+<rect x="825" y="750" width="290" height="120" rx="22" fill="#F0EEFF" stroke="#5146A5" stroke-width="3"/>
+<text x="970.0" y="798" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#5146A5">Saved model</text>
+<text x="970.0" y="833" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#626978">Checkpoint + decision threshold</text>
+<line x1="970" y1="550" x2="970" y2="580" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<line x1="970" y1="710" x2="970" y2="740" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<line x1="825" y1="810" x2="795" y2="880" stroke="#5E6067" stroke-width="4" stroke-dasharray="10 10" marker-end="url(#arr)"/>
+<text x="965" y="930" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#626978">Training and evaluation</text>
+<text x="620" y="1270" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#626978">The detector returns a classification and score; saved runs differ by dataset and threshold.</text>
+<rect x="1300" y="285" width="420" height="112" rx="22" fill="#F4F2ED" stroke="#5E6067" stroke-width="3"/>
+<text x="1510.0" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="#20212A">Target speaker audio</text>
+<text x="1510.0" y="368" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#626978">Reference voice / target profile</text>
+<rect x="1840" y="285" width="420" height="112" rx="22" fill="#F4F2ED" stroke="#5E6067" stroke-width="3"/>
+<text x="2050.0" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="#20212A">Source speech</text>
+<text x="2050.0" y="368" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#626978">Content to convert</text>
+<text x="1780" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#5146A5">RVC VOICE CONVERSION</text>
+<rect x="1300" y="460" width="960" height="470" rx="30" fill="#F0EEFF" stroke="#5146A5" stroke-width="4"/>
+<rect x="1350" y="520" width="390" height="105" rx="22" fill="#E6F6F0" stroke="#13745E" stroke-width="3"/>
+<text x="1545.0" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#13745E">Pitch extraction</text>
+<text x="1545.0" y="603" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#626978">F0 features</text>
+<rect x="1820" y="520" width="390" height="105" rx="22" fill="#E6F6F0" stroke="#13745E" stroke-width="3"/>
+<text x="2015.0" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#13745E">Content extraction</text>
+<text x="2015.0" y="603" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#626978">HuBERT / content features</text>
+<rect x="1820" y="665" width="390" height="95" rx="22" fill="#E6F6F0" stroke="#13745E" stroke-width="3"/>
+<text x="2015.0" y="713" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#13745E">Feature retrieval</text>
+<text x="2015.0" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#626978">Index-assisted retrieval</text>
+<rect x="1490" y="805" width="580" height="100" rx="22" fill="#E6F6F0" stroke="#13745E" stroke-width="3"/>
+<text x="1780.0" y="853" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#13745E">RVC generator</text>
+<text x="1780.0" y="888" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#626978">Local voice-conversion workflow</text>
+<line x1="1510" y1="397" x2="1510" y2="510" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<line x1="2050" y1="397" x2="2050" y2="510" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<line x1="2015" y1="625" x2="2015" y2="655" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<line x1="1545" y1="625" x2="1545" y2="790" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<line x1="2015" y1="760" x2="2015" y2="790" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="1490" y="955" width="580" height="112" rx="22" fill="#F4F2ED" stroke="#5E6067" stroke-width="3"/>
+<text x="1780.0" y="1003" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="#20212A">Converted speech</text>
+<text x="1780.0" y="1038" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#626978">Generated audio output</text>
+<line x1="1780" y1="905" x2="1780" y2="945" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="1430" y="1125" width="700" height="105" rx="22" fill="#F0EEFF" stroke="#5146A5" stroke-width="3"/>
+<text x="1780.0" y="1173" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#5146A5">Detector can analyze converted audio</text>
+<text x="1780.0" y="1208" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#626978">Upload the output to the detection interface</text>
+<line x1="1780" y1="1067" x2="1780" y2="1115" stroke="#5E6067" stroke-width="4" marker-end="url(#arr)"/>
+<text x="1780" y="1275" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#626978">Voice conversion is a separate optional workflow; it does not automatically add data to training.</text>
+</svg>

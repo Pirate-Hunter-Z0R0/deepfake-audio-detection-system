@@ -1,0 +1,16 @@
+file,true_class,pred_class_active,confidence_%,fake_prob_active,error_type,speaker_id,source,duration_sec,snr_db,in_adaptation_train
+teammate04_real_0014.wav,Real,Fake,80.08,0.8008,FP (False Alarm),teammate04,recorded_human,5.0,20.1,True
+teammate05_real_0006.wav,Real,Fake,61.1,0.611,FP (False Alarm),teammate05,recorded_human,5.0,24.63,False
+teammate05_real_0014.wav,Real,Fake,54.43,0.5443,FP (False Alarm),teammate05,recorded_human,5.0,24.87,False
+teammate05_real_0022.wav,Real,Fake,90.71,0.9071,FP (False Alarm),teammate05,recorded_human,5.0,20.02,False
+teammate04_rvc_0001.wav,Fake,Real,95.98,0.0402,FN (Evaded Deepfake),teammate04,TTS+RVC_v2,6.34,47.54,False
+teammate04_rvc_0002.wav,Fake,Real,62.6,0.374,FN (Evaded Deepfake),teammate04,TTS+RVC_v2,6.34,46.81,False
+teammate04_rvc_0003.wav,Fake,Real,99.47,0.0053,FN (Evaded Deepfake),teammate04,TTS+RVC_v2,6.3,48.65,False
+teammate04_rvc_0004.wav,Fake,Real,99.99,1e-04,FN (Evaded Deepfake),teammate04,TTS+RVC_v2,7.02,47.82,False
+teammate04_rvc_0006.wav,Fake,Real,69.95,0.3005,FN (Evaded Deepfake),teammate04,TTS+RVC_v2,6.88,48.09,False
+teammate05_rvc_0001.wav,Fake,Real,81.0,0.19,FN (Evaded Deepfake),teammate05,TTS+RVC_v2,6.12,53.88,False
+teammate05_rvc_0002.wav,Fake,Real,61.31,0.3869,FN (Evaded Deepfake),teammate05,TTS+RVC_v2,6.34,53.53,False
+teammate05_rvc_0003.wav,Fake,Real,99.44,0.0056,FN (Evaded Deepfake),teammate05,TTS+RVC_v2,5.8,54.0,False
+teammate05_rvc_0004.wav,Fake,Real,99.77,0.0023,FN (Evaded Deepfake),teammate05,TTS+RVC_v2,6.72,53.16,False
+teammate05_rvc_0005.wav,Fake,Real,89.6,0.104,FN (Evaded Deepfake),teammate05,TTS+RVC_v2,14.0,53.56,False
+teammate05_rvc_0006.wav,Fake,Real,99.87,0.0013,FN (Evaded Deepfake),teammate05,TTS+RVC_v2,11.64,53.71,False

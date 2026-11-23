@@ -1,0 +1,28 @@
+=================================================================
+     AUDIO DEEPFAKE DETECTION SYSTEM — EVALUATION REPORT         
+=================================================================
+
+Model Evaluated     : SVM Baseline Classifier
+Model Path          : D:\Projects\Deepfake Detection\audio-deepfake-agent2\models\baseline_model.pkl
+Test Set File       : D:\Projects\Deepfake Detection\audio-deepfake-agent2\data\features\test_split.csv
+Total Test Samples  : 7148
+
+-----------------------------------------------------------------
+EVALUATION METRICS:
+-----------------------------------------------------------------
+Accuracy            : 99.05%
+Precision           : 0.9894
+Recall              : 0.9916
+F1-Score            : 0.9905
+AUC (ROC Area)      : 0.9996
+Equal Error Rate    : 0.91%
+EER Decision Thresh : 0.5000
+-----------------------------------------------------------------
+
+EQUAL ERROR RATE (EER) EXPLANATION FOR VIVA:
+-----------------------------------------------------------------
+Equal Error Rate (EER) is the operating point on the ROC curve where
+False Acceptance Rate (FAR - falsely passing a deepfake voice as real)
+equals False Rejection Rate (FRR - falsely rejecting a real voice as fake).
+A lower EER value indicates a superior and more reliable detector.
+=================================================================

@@ -1,0 +1,9 @@
+{
+    "Accuracy": 99.79,
+    "Precision": 0.9989,
+    "Recall": 0.9969,
+    "F1_Score": 0.9979,
+    "AUC": 0.9995,
+    "EER_Percentage": 0.14,
+    "EER_Threshold": 0.4093
+}

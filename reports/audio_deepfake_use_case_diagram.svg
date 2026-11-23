@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1450" viewBox="0 0 2200 1450">
+<rect width="2200" height="1450" fill="#FFFFFF"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2E76C3"/></marker></defs>
+<text x="1100.0" y="70" text-anchor="middle" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#20212A">USE-CASE DIAGRAM — AUDIO DEEPFAKE DETECTION SYSTEM</text>
+<text x="1100.0" y="120" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#606979">DFADS project application and offline model evaluation</text>
+<rect x="390" y="170" width="1410" height="1180" rx="0" fill="#FBFCFE" stroke="#2E76C3" stroke-width="4" stroke-dasharray="16 12"/>
+<text x="1095" y="220" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#2E76C3">DFADS SYSTEM BOUNDARY</text>
+<circle cx="190" cy="585" r="39" fill="#E8EEF5" stroke="#20212A" stroke-width="5"/>
+<line x1="190" y1="624" x2="190" y2="760" stroke="#20212A" stroke-width="5"/>
+<line x1="120" y1="675" x2="260" y2="675" stroke="#20212A" stroke-width="5"/>
+<line x1="190" y1="760" x2="125" y2="855" stroke="#20212A" stroke-width="5"/>
+<line x1="190" y1="760" x2="255" y2="855" stroke="#20212A" stroke-width="5"/>
+<text x="190" y="895" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#20212A">User / Analyst</text>
+<text x="190" y="925" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#606979">Uploads audio and reviews analysis</text>
+<circle cx="2000" cy="940" r="39" fill="#E8EEF5" stroke="#20212A" stroke-width="5"/>
+<line x1="2000" y1="979" x2="2000" y2="1115" stroke="#20212A" stroke-width="5"/>
+<line x1="1930" y1="1030" x2="2070" y2="1030" stroke="#20212A" stroke-width="5"/>
+<line x1="2000" y1="1115" x2="1935" y2="1210" stroke="#20212A" stroke-width="5"/>
+<line x1="2000" y1="1115" x2="2065" y2="1210" stroke="#20212A" stroke-width="5"/>
+<text x="2000" y="1250" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#20212A">Model Developer</text>
+<text x="2000" y="1280" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#606979">Runs offline evaluation</text>
+<ellipse cx="735" cy="345" rx="260" ry="78" fill="#EEF6FF" stroke="#2E76C3" stroke-width="3"/>
+<text x="735" y="341" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#20212A">UC1: Provide Audio Clip</text>
+<text x="735" y="379" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#606979">Upload • microphone • sample</text>
+<ellipse cx="735" cy="555" rx="260" ry="78" fill="#EEF6FF" stroke="#2E76C3" stroke-width="3"/>
+<text x="735" y="551" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#20212A">UC2: Run Detection</text>
+<text x="735" y="589" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#606979">Analyze submitted audio</text>
+<ellipse cx="735" cy="805" rx="260" ry="78" fill="#EEF6FF" stroke="#2E76C3" stroke-width="3"/>
+<text x="735" y="801" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#20212A">UC3: View Detection Result</text>
+<text x="735" y="839" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#606979">Class label and confidence score</text>
+<ellipse cx="735" cy="1055" rx="260" ry="78" fill="#EEF6FF" stroke="#2E76C3" stroke-width="3"/>
+<text x="735" y="1051" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#20212A">UC4: Inspect Audio Views</text>
+<text x="735" y="1089" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#606979">Waveform • spectrogram • FFT • features</text>
+<ellipse cx="1450" cy="480" rx="275" ry="82" fill="#E7F6F0" stroke="#13745E" stroke-width="3"/>
+<text x="1450" y="476" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#20212A">UC5: Prepare Audio</text>
+<text x="1450" y="514" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#606979">Preprocess and extract 78 features</text>
+<ellipse cx="1450" cy="725" rx="275" ry="82" fill="#E7F6F0" stroke="#13745E" stroke-width="3"/>
+<text x="1450" y="721" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#20212A">UC6: Classify Audio</text>
+<text x="1450" y="759" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#606979">ResNeXt grouped-convolution model</text>
+<ellipse cx="1450" cy="1095" rx="300" ry="82" fill="#F4F2ED" stroke="#5E6067" stroke-width="3"/>
+<text x="1450" y="1091" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#20212A">UC7: Evaluate Model &amp; Metrics</text>
+<text x="1450" y="1129" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#606979">Offline labeled run • saved result artifacts</text>
+<line x1="265" y1="740" x2="475" y2="345" stroke="#5E6067" stroke-width="3"/>
+<line x1="265" y1="740" x2="475" y2="555" stroke="#5E6067" stroke-width="3"/>
+<line x1="265" y1="740" x2="475" y2="805" stroke="#5E6067" stroke-width="3"/>
+<line x1="265" y1="740" x2="475" y2="1055" stroke="#5E6067" stroke-width="3"/>
+<line x1="735" y1="477" x2="735" y2="423" stroke="#2E76C3" stroke-width="3" stroke-dasharray="10 9" marker-end="url(#arrow)"/>
+<text x="825" y="465" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#2E76C3">«include»</text>
+<line x1="995" y1="555" x2="1155" y2="495" stroke="#2E76C3" stroke-width="3" stroke-dasharray="10 9" marker-end="url(#arrow)"/>
+<text x="1080" y="510" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#2E76C3">«include»</text>
+<line x1="1450" y1="562" x2="1450" y2="640" stroke="#2E76C3" stroke-width="3" stroke-dasharray="10 9" marker-end="url(#arrow)"/>
+<text x="1555" y="615" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#2E76C3">«include»</text>
+<line x1="1210" y1="725" x2="995" y2="805" stroke="#2E76C3" stroke-width="3" stroke-dasharray="10 9" marker-end="url(#arrow)"/>
+<text x="1100" y="770" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#2E76C3">«include»</text>
+<line x1="735" y1="977" x2="735" y2="883" stroke="#2E76C3" stroke-width="3" stroke-dasharray="10 9" marker-end="url(#arrow)"/>
+<text x="825" y="935" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#2E76C3">«extend»</text>
+<line x1="1915" y1="1095" x2="1750" y2="1095" stroke="#5E6067" stroke-width="3"/>
+<text x="1095" y="1395" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#606979">Dashed arrows show include / extend relationships. Microphone and preset-sample inputs are dashboard features.</text>
+</svg>
