@@ -17,9 +17,6 @@ The project incorporates post-hoc probability calibration (Platt scaling & Youde
   * Tharun T L (`4NI24IS239`)
   * Dhanush K P (`4NI24IS242`)
   * Abhinand P (`4NI24IS244`)
-* **Project Guide:** Dr. S. Kuzhalvaimozhi, Professor, Dept. of IS&E, NIE, Mysuru
-* **Head of Department:** Dr. Shashank D, Associate Professor & HOD, Dept. of IS&E, NIE, Mysuru
-
 ---
 
 ## 📁 Repository Structure
